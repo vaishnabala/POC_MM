@@ -5,7 +5,7 @@ from googleapiclient.discovery import build # type: ignore
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # Set up your API key
-API_KEY = api_key = open('C:/Users/User/Downloads/Assignment_Curisous_PM/GAPI2.txt', 'r').read().strip()  # file path for API key.txt
+API_KEY = api_key = open('APIfile_path.txt', 'r').read().strip()  # file path for API key.txt
 
 # Create a YouTube API client
 youtube = build('youtube', 'v3', developerKey=API_KEY)
